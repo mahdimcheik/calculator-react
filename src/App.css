@@ -1,42 +1,74 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 1.5rem;
+}
+.container{
+  width: 500px;
+  height: 800px;
+  background-color: rgb(255, 251, 245);
+  border-radius: 20px;
+}
+.screen{
+  position: relative;
+  top: 20px;
+  width: 450px;
+  height: 150px;
+  background-color: white;
+  border-radius: 10px;
+  margin: 20px auto;
+  box-shadow: 2px 2px 4px rgb(112, 112, 112);
+}
+.ms{
+  position: relative;
+  top: 10px;
+  margin: 10px auto;
+  width: 480px;
+  display: flex;
+  justify-content: space-between;
+}
+.ms a{
+  font-size: 1.2rem;
+  width: 70px;
+  height: 50px;
+  background-color: white;
   text-align: center;
+  line-height: 50px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px black;
+}
+.numpad{
+  margin: 0 auto;
+  width: 480px;
+  height: 540px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+a.number{
+  width: 115px;
+  height:80px;
+  background-color: white;
+  text-align: center;
+  line-height: 70px;
+  border-radius: 5px;
+  margin: 5px 0;
+  box-shadow: 2px 2px 4px black;
+  transition:.2s all;
+}
+a.numpad:active, a.numpad:active{
+  box-shadow: 2px 2px 4px rgb(167, 73, 73);
+  transform: scale(0.98); 
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+a.number:active{
+  box-shadow: 2px 2px 2px rgb(100, 100, 100);
+  transform: scale(0.98); 
+  color: black;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+ a.number:hover{
+  text-decoration: none;
+  color: black;
 }
